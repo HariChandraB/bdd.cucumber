@@ -1,7 +1,8 @@
 #Sample Feature Definition Template
-Feature: Verify Amazon Product search Functionality by relevance
+Feature:Verify Amazon Product search Functionality by relevance
 
-Scenario: user goes to search box and enters the product
+Scenario:user goes to search box and enters the product
+
 Given user is on amazon page
 When user enters productName in search textBox
 And user clicks on textBox
