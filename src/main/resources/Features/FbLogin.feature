@@ -18,10 +18,28 @@
 #Sample Feature Definition Template
 Feature: Verify Facebook Login Functionality
 
-Scenario: user enters invalid username and password
-Given user is on fb login page
-When user enters username in username textbox
-And user enters password in password textbox
-And user clicks on logIn button
-Then user navigates to other page
-And user validates the error message
+  #Scenario: user enters invalid username and password
+  #Given user is on fb login page
+  #When user enters username in username textbox
+  #And user enters password in password textbox
+  #And user clicks on logIn button
+  #Then user navigates to other page
+  #And user validates the error message
+  
+  
+  #@Smoke @regression
+  #can add tags for these
+  Scenario Outline: user enters invalid username and invalidpassword
+    Given user is on fb login page
+    When user enters "<username>" in username textbox
+    And user enters "<password>" in password textbox
+    And user clicks on logIn button
+    Then user navigates to other page
+    And user validates the error message
+
+    Examples: 
+      | username | password |
+      | user     | pwd1     |
+      | user1    | pwd2     |
+      | user2    | pwd3     |
+      | user3    | pwd7     |

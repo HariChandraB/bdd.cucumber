@@ -13,7 +13,7 @@ import cucumber.api.java.en.When;
 
 public class FacebookLogin {
 
-	public static WebDriver driver;
+	/*public static WebDriver driver;
 	Facebook_Login login ;
 
 	@Given("^user is on fb login page$")
@@ -58,5 +58,5 @@ public class FacebookLogin {
 		System.out.println("user_validates_the_error_message");
 		throw new PendingException();
 	}
-
+*/
 }
